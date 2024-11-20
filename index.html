@@ -37,35 +37,8 @@ function OptanonWrapper() { }
 </head>
 
 <body>
-<script>
 
-    window.addEventListener('load', function () {
-        if (window.location.href.includes('/')) {
-
-            var x = window.dataLayer
-            for (i = 0; i < x.length; i++) {
-                if (x[i].user_id) {
-                    var dlv_claim_id = x[i].user_id
-                    if (dlv_claim_id) {
-                        var id = dlv_claim_id
-                        var sid = id.toString()
-                        var bag = "#"
-                        for (var i = 0; i < sid.length; i++) {
-                            bag += sid[i] + "$"
-
-                        }
-                        gtag('event', 'hash_data', {
-                            'send_to': 'G-JVVBDFWT30',
-                            'claim_id': x
-                        });
-                    } else {
-                        console.log("claim_is not found")
-                    }
-                }
-            }
-        }
-    });
-</script>
+    
 
 <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W4FVT2MZ"
@@ -130,7 +103,27 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     'user_id':226976
 
   });
+ var x = window.dataLayer
+            for (i = 0; i < x.length; i++) {
+                if (x[i].user_id) {
+                    var dlv_claim_id = x[i].user_id
+                    if (dlv_claim_id) {
+                        var id = dlv_claim_id
+                        var sid = id.toString()
+                        var bag = "#"
+                        for (var i = 0; i < sid.length; i++) {
+                            bag += sid[i] + "$"
 
+                        }
+                        gtag('event', 'hash_data', {
+                            'send_to': 'G-JVVBDFWT30',
+                            'claim_id': x
+                        });
+                    } else {
+                        console.log("claim_is not found")
+                    }
+                }
+            }
 </script>
 
 </html>
