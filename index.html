@@ -38,11 +38,31 @@ function OptanonWrapper() { }
 
 <body>
  <script>
+   var x=window.dataLayer
+for (i=0;i<x.length;i++){
+    if(x[i].user_id){
+        var dlv_claim_id=x[i].user_id
+       if(dlv_claim_id){
+var id =dlv_claim_id
+  var sid=id.toString()
+  var bag="#"
+  for(var i=0;i<sid.length;i++){
+  bag+=sid[i]+"$"
+  
+  }
+           console.log(bag)
+   return bag;
+}else{
+           console.log("claim_is not found")
+return "issue"
+}
+    }
+}
   window.addEventListener('load', function() {
     if (window.location.href.includes('/')) {
       gtag('event', 'hash_data', {
         'send_to': 'G-JVVBDFWT30',
-        'claim_id':22222
+        'claim_id':x
       });
     }
   });
