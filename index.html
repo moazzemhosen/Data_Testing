@@ -4,11 +4,11 @@
 <head>
 
   Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+<!-- <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-W4FVT2MZ');</script>
+})(window,document,'script','dataLayer','GTM-W4FVT2MZ');</script> -->
 <!-- End Google Tag Manager
   
 <!-- OneTrust Cookies Consent Notice start for axa.jibeapply.com -->
@@ -41,8 +41,8 @@ function OptanonWrapper() { }
     
 
 <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W4FVT2MZ"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W4FVT2MZ"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript> -->
 <!-- End Google Tag Manager (noscript) -->
 
   <div class="container">
@@ -94,14 +94,17 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!--   <script src="./scripts/index.js"> -->
   window.dataLayer = window.dataLayer || [];
 
- window.tc_vars={
-''event':'pageLoad',
-'work_env':'prod/preprod,
-'language':'en/fr',
-'page_title':'',
-'page_url':'',
-'previous_url':''
-}
+     var tc_vars = {
+ 
+        "env_template": "homepage",
+ 
+        "user_location": "New York",
+ 
+        "product_id": "SKU123"
+ 
+    };
+
+ 
 function encodeBase64(data) {
     return btoa(data);
 }
