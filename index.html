@@ -94,17 +94,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!--   <script src="./scripts/index.js"> -->
   window.dataLayer = window.dataLayer || [];
 
-  dataLayer.push({
-    'event': 'pageLoad',
-    'page_name': 'Home Page',
-    'title': 'Home Page',
-    'page_url': 'https://data-testing.vercel.app/index.html',
-    'language': 'en',
-    'Click URL': 'https://data-testing.vercel.app/index.html',
-    'Click Text': 'Home Page',
-    'user_id':226976
-
-  });
+ window.tc_vars={
+''event':'pageLoad',
+'work_env':'prod/preprod,
+'language':'en/fr',
+'page_title':'',
+'page_url':'',
+'previous_url':''
+}
 function encodeBase64(data) {
     return btoa(data);
 }
