@@ -11,6 +11,7 @@
       ];
       const matched = containerMap.find(item => item.hostname === host);
       const gtmId = matched ? matched.gtmId : '';
+  console.log("sitegtmId",matched ,gtmId)
     if (gtmId) {
       var gtmScript = document.createElement('script');
       gtmScript.innerHTML = `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
