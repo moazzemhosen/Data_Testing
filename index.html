@@ -2,10 +2,11 @@
 <html lang="en">
 
 <head>
- 
+<!--   piano Analytics SDK -->
+ <script type="text/javascript" crossorigin="anonymous" src="https://tag.aticdn.net/js-sdk/piano-analytics-6.16.1.js"></script>
 <!-- OneTrust Cookies Consent Notice start for data-testing.vercel.app -->
-<script type="text/javascript" src="https://cdn.cookielaw.org/consent/f6489805-58fe-4932-8a1a-2f6ace27366b-test/OtAutoBlock.js" ></script>
-<script src="https://cdn.cookielaw.org/scripttemplates/otSDKStub.js" data-document-language="true" type="text/javascript" charset="UTF-8" data-domain-script="f6489805-58fe-4932-8a1a-2f6ace27366b-test" ></script>
+<!-- <script type="text/javascript" src="https://cdn.cookielaw.org/consent/f6489805-58fe-4932-8a1a-2f6ace27366b-test/OtAutoBlock.js" ></script>
+<script src="https://cdn.cookielaw.org/scripttemplates/otSDKStub.js" data-document-language="true" type="text/javascript" charset="UTF-8" data-domain-script="f6489805-58fe-4932-8a1a-2f6ace27366b-test" ></script> -->
 <!-- OneTrust Cookies Consent Notice end for data-testing.vercel.app -->
 
 <!-- Google Tag Manager Start -->
@@ -31,9 +32,16 @@
   })();
 </script> -->
 <!--   Google Tag Manager End -->
-
-  
-
+pa.setConfigurations({
+  site: 633033,
+  collectDomain: "https://xnfwmvk.pa-cd.com",
+});
+ pa.sendEvent("page.display", {
+  page: "Page name",
+  page_premium: false,
+  page_authors: ["Clark Kent", "John Cena"],
+});
+ 
 
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -43,6 +51,7 @@
 </head>
 
 <body>
+
 <!-- Google Tag Manager Start -->
 <!--     <noscript id="gtm-noscript"></noscript>
 <script>
